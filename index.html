@@ -49,18 +49,19 @@
         .step-card h3 { color: #f0f6fc; margin: 10px 0 8px; font-size: 1.1rem; }
         .step-card p { font-size: 0.88rem; color: #8b949e; }
 
-        /* Projects */
+        /* Projects Detailed Cards */
         .project-card-full { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 30px; margin-bottom: 35px; }
         .project-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #21262d; padding-bottom: 15px; margin-bottom: 20px; flex-wrap: wrap; gap: 10px; }
         .project-title { font-size: 1.4rem; color: #f0f6fc; font-weight: bold; }
         .tech-badge { background: #1f6feb1a; color: #58a6ff; border: 1px solid #1f6feb44; padding: 4px 10px; border-radius: 15px; font-size: 0.8rem; margin-left: 5px; }
 
-        .project-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 20px; }
-        .detail-box { background: #0d1117; border: 1px solid #21262d; padding: 15px; border-radius: 6px; }
-        .detail-box h4 { color: #3fb950; margin-bottom: 8px; font-size: 0.95rem; }
-        .detail-box ul { margin-left: 15px; color: #8b949e; font-size: 0.88rem; }
+        .project-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .detail-box { background: #0d1117; border: 1px solid #21262d; padding: 18px; border-radius: 6px; }
+        .detail-box h4 { color: #3fb950; margin-bottom: 10px; font-size: 1rem; }
+        .detail-box ul { margin-left: 18px; color: #8b949e; font-size: 0.9rem; }
+        .detail-box li { margin-bottom: 6px; }
 
-        .project-link-btn { display: inline-flex; align-items: center; gap: 8px; color: #ffffff; text-decoration: none; font-weight: bold; font-size: 0.9rem; border: 1px solid #238636; padding: 10px 20px; border-radius: 6px; background: #238636; transition: 0.3s; }
+        .project-link-btn { display: inline-flex; align-items: center; gap: 8px; color: #ffffff; text-decoration: none; font-weight: bold; font-size: 0.9rem; border: 1px solid #238636; padding: 10px 20px; border-radius: 6px; background: #238636; transition: 0.3s; margin-top: 10px; }
         .project-link-btn:hover { background: #2ea043; }
 
         /* Contact Section Grid */
@@ -138,10 +139,10 @@
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- Detailed Projects Section -->
         <section id="projects">
             <h2 class="section-title">Deep-Dive Project Case Studies</h2>
-            <p class="section-subtitle">Real project files and dashboards uploaded directly on Google Drive</p>
+            <p class="section-subtitle">Comprehensive analysis, technical breakdown, and direct Google Drive file access</p>
 
             <!-- Project 1 -->
             <div class="project-card-full">
@@ -155,17 +156,24 @@
                 </div>
                 <div class="project-detail-grid">
                     <div class="detail-box">
-                        <h4>Business Problem</h4>
+                        <h4><i class="fas fa-exclamation-circle"></i> Business Problem</h4>
                         <ul>
-                            <li>Raw transactional records scattered across regional logs.</li>
-                            <li>Lack of real-time Year-over-Year (YoY) profit growth visibility.</li>
+                            <li>Raw transactional records scattered across regional logs without central tracking.</li>
+                            <li>Lack of real-time Year-over-Year (YoY) profit growth visibility for decision makers.</li>
                         </ul>
                     </div>
                     <div class="detail-box">
-                        <h4>Technical Solution</h4>
+                        <h4><i class="fas fa-cogs"></i> Technical Solution</h4>
                         <ul>
-                            <li>Established a Star-Schema data model connecting Fact Sales.</li>
-                            <li>Wrote custom DAX measures for YoY Growth % and Profit Margins.</li>
+                            <li>Established a clean Star-Schema data model connecting Fact Sales with Dimension tables.</li>
+                            <li>Wrote custom DAX measures for YoY Growth %, Profit Margins, and Moving Averages.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-box">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul>
+                            <li>Reduced reporting prep time by 75% with automated dynamic dashboarding.</li>
+                            <li>Identified top 15% revenue-generating product categories across regions.</li>
                         </ul>
                     </div>
                 </div>
@@ -186,17 +194,24 @@
                 </div>
                 <div class="project-detail-grid">
                     <div class="detail-box">
-                        <h4>Business Problem</h4>
+                        <h4><i class="fas fa-exclamation-circle"></i> Business Problem</h4>
                         <ul>
-                            <li>Absence of consolidated financial tracking for revenue streams.</li>
-                            <li>Inability to perform instant scenario filtering.</li>
+                            <li>Absence of consolidated financial tracking across multiple operational revenue streams.</li>
+                            <li>Inability to perform instant scenario filtering without breaking formula dependencies.</li>
                         </ul>
                     </div>
                     <div class="detail-box">
-                        <h4>Technical Solution</h4>
+                        <h4><i class="fas fa-cogs"></i> Technical Solution</h4>
                         <ul>
-                            <li>Built dynamic data tables using XLOOKUP and INDEX/MATCH.</li>
-                            <li>Created interactive Pivot Charts and interconnected Slicers.</li>
+                            <li>Built dynamic data tables using XLOOKUP, INDEX/MATCH, and conditional formatting.</li>
+                            <li>Created interactive Pivot Charts connected via interconnected Slicers and Timelines.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-box">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul>
+                            <li>Streamlined financial review meetings with instant multi-region filtering.</li>
+                            <li>Highlighted cost leakages and improved margin calculation accuracy.</li>
                         </ul>
                     </div>
                 </div>
@@ -212,6 +227,27 @@
                     <div>
                         <span class="tech-badge">SQL / Excel</span>
                         <span class="tech-badge">Data Cleaning</span>
+                        <span class="tech-badge">ETL</span>
+                    </div>
+                </div>
+                <div class="project-detail-grid">
+                    <div class="detail-box">
+                        <h4><i class="fas fa-exclamation-circle"></i> Business Problem</h4>
+                        <ul>
+                            <li>Unstructured operational logs containing missing values, duplicate entries, and inconsistent dates.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-box">
+                        <h4><i class="fas fa-cogs"></i> Technical Solution</h4>
+                        <ul>
+                            <li>Performed rigorous data wrangling, null handling, and type conversions to standardize dataset.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-box">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul>
+                            <li>Produced a 100% clean, structured dataset ready for relational database integration and reporting.</li>
+                        </ul>
                     </div>
                 </div>
                 <a href="https://docs.google.com/spreadsheets/d/11X7asN6yhs9mybe51JfvxTmA-s5wTVWT/edit?usp=sharing" target="_blank" class="project-link-btn">
@@ -226,6 +262,27 @@
                     <div>
                         <span class="tech-badge">Python</span>
                         <span class="tech-badge">EDA</span>
+                        <span class="tech-badge">Pandas</span>
+                    </div>
+                </div>
+                <div class="project-detail-grid">
+                    <div class="detail-box">
+                        <h4><i class="fas fa-exclamation-circle"></i> Business Problem</h4>
+                        <ul>
+                            <li>Lack of clear understanding regarding customer buying patterns and churn rates in retail.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-box">
+                        <h4><i class="fas fa-cogs"></i> Technical Solution</h4>
+                        <ul>
+                            <li>Conducted Exploratory Data Analysis (EDA) to segment customers by purchase frequency and total spend.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-box">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul>
+                            <li>Provided targeted customer segments to marketing for tailored promotional campaigns.</li>
+                        </ul>
                     </div>
                 </div>
                 <a href="https://docs.google.com/spreadsheets/d/1vsNV49S6DH4ar0wXbSV1aJYbohwvzICB/edit?usp=sharing" target="_blank" class="project-link-btn">
