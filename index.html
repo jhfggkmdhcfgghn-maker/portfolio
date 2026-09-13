@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatma Jaber Obada | Data Analyst Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background-color: #0d1117; color: #c9d1d9; line-height: 1.6; }
+        nav { background: #161b22; border-bottom: 1px solid #30363d; position: fixed; width: 100%; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; }
+        .logo { color: #58a6ff; font-weight: bold; font-size: 1.3rem; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: #8b949e; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: #58a6ff; }
+        
+        section { padding: 90px 20px 40px; max-width: 1100px; margin: 0 auto; }
+        .hero { min-height: 85vh; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+        .hero-text h1 { font-size: 3rem; color: #f0f6fc; margin-bottom: 10px; }
+        .hero-text h2 { color: #3fb950; font-size: 1.5rem; margin-bottom: 20px; }
+        .btn { display: inline-block; padding: 10px 20px; background: #238636; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-right: 10px; margin-top: 15px; }
+        
+        .section-title { font-size: 2rem; color: #f0f6fc; border-bottom: 2px solid #30363d; padding-bottom: 10px; margin-bottom: 30px; text-align: center; }
+        
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 25px; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .project-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; transition: 0.3s; }
+        .project-card:hover { border-color: #58a6ff; transform: translateY(-3px); }
+        .project-card h3 { color: #f0f6fc; margin-bottom: 10px; }
+        .tags { color: #58a6ff; font-size: 0.85rem; font-weight: bold; margin-bottom: 10px; display: block; }
+        
+        .workflow { display: flex; justify-content: space-between; text-align: center; gap: 10px; flex-wrap: wrap; }
+        .step { background: #161b22; border: 1px solid #30363d; padding: 15px; border-radius: 8px; flex: 1; min-width: 140px; }
+        .step h4 { color: #3fb950; margin-bottom: 5px; }
+
+        footer { text-align: center; padding: 30px; border-top: 1px solid #30363d; color: #8b949e; background: #161b22; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">&lt;FatmaJaber /&gt;</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p style="color: #58a6ff; font-weight: bold;">Hello, I am</p>
+            <h1>Fatma Jaber Obada</h1>
+            <h2>Data Analyst</h2>
+            <p>Passionate about transforming raw data into actionable insights, driving business decisions, and creating impactful visualizations.</p>
+            <p style="margin-top: 10px; color: #8b949e;">Group Code: <strong>BNS5_DAT1_S2</strong></p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn" style="background: #21262d; border: 1px solid #30363d;">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <h3 style="color: #58a6ff; margin-bottom: 10px;">Unique Selling Proposition (USP)</h3>
+            <p style="font-size: 1.1rem; color: #c9d1d9;">"Passionate Data Analyst skilled in transforming raw data into actionable business insights. Combining strong analytical thinking with data visualization to help organizations make data-driven decisions, optimize workflows, and solve complex problems efficiently."</p>
+        </div>
+    </section>
+
+    <section id="workflow">
+        <h2 class="section-title">Data Analysis Workflow</h2>
+        <div class="workflow">
+            <div class="step"><h4>01</h4><p>Data Collection</p></div>
+            <div class="step"><h4>02</h4><p>Data Cleaning</p></div>
+            <div class="step"><h4>03</h4><p>EDA Analysis</p></div>
+            <div class="step"><h4>04</h4><p>Visualization</p></div>
+            <div class="step"><h4>05</h4><p>Business Insights</p></div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <h3 style="color: #3fb950; margin-bottom: 10px;"><i class="fas fa-code"></i> Languages & Tools</h3>
+                <p>Python (Pandas, NumPy), Advanced Excel, SQL, MySQL, SQL Server.</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #58a6ff; margin-bottom: 10px;"><i class="fas fa-chart-bar"></i> BI & Visualization</h3>
+                <p>Power BI, Tableau, Matplotlib, Seaborn, Interactive Dashboards.</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #a371f7; margin-bottom: 10px;"><i class="fas fa-cogs"></i> Core Services</h3>
+                <p>Exploratory Data Analysis (EDA), Data Cleaning & Wrangling, Business Intelligence Reporting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid">
+            <div class="project-card">
+                <h3>1. Sales & Performance Dashboard</h3>
+                <span class="tags">Power BI, DAX, Data Modeling</span>
+                <p>Designed an interactive dashboard to evaluate sales trends and financial metrics for executive decision-making.</p>
+            </div>
+            <div class="project-card">
+                <h3>2. Financial & Analytics Dashboard</h3>
+                <span class="tags">Advanced Excel, Pivot Tables, Slicers</span>
+                <p>Built a dynamic analytics dashboard using Excel Slicers & Pivot tables to track organizational performance.</p>
+            </div>
+            <div class="project-card">
+                <h3>3. Customer & Retail Analysis</h3>
+                <span class="tags">Excel, EDA, Statistics</span>
+                <p>Analyzed order behaviors and purchasing trends to segment customers and improve retail efficiency.</p>
+            </div>
+            <div class="project-card">
+                <h3>4. Operational Data Processing</h3>
+                <span class="tags">Excel Formulas, XLOOKUP, Data Cleaning</span>
+                <p>Structured operational datasets and applied advanced formulas to streamline recurring business reporting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="card" style="text-align: center;">
+            <p>Interested in working together or reviewing my full analysis?</p>
+            <p style="margin-top: 10px; color: #58a6ff; font-weight: bold;">Fatma Jaber Obada - Data Analyst</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Fatma Jaber Obada | DEPI Session 1 Assignment Portfolio</p>
+    </footer>
+
+</body>
+</html>
